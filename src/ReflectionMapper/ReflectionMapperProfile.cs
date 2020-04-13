@@ -44,7 +44,7 @@ namespace ReflectionMapper
         {
             return assemblyTypes
                 .Where(s => s.GetInterfaces().Any(interfaces => interfaces.IsGenericType && interfaces.GetGenericTypeDefinition() == typeof(IMap<>)))
-                .Select(dto => new MapType()
+                .Select(dto => new MapType
                 {
                     DTO = dto,
                     Entity = dto.GetInterfaces().Where(sg => sg.IsGenericType && sg.GetGenericTypeDefinition() == typeof(IMap<>))
