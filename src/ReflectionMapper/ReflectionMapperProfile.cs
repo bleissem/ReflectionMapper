@@ -9,7 +9,7 @@ namespace ReflectionMapper
 {
     public abstract class ReflectionMapperProfile : Profile
     {
-        public ReflectionMapperProfile(params Assembly[] assemblies)
+        protected ReflectionMapperProfile(params Assembly[] assemblies)
         {
             IEnumerable<Type> assembyTypes = assemblies.SelectMany(assembly => assembly.GetTypes());
 
@@ -34,10 +34,6 @@ namespace ReflectionMapper
                     invokeMapping.Invoke();
                 }
             }
-        }
-
-        protected ReflectionMapperProfile()
-        {
         }
 
         private static IEnumerable<MapType> GetMapTypes(IEnumerable<Type> assemblyTypes)
