@@ -11,4 +11,8 @@
     <PackageLicenseUrl>https://github.com/bleissem/ReflectionMapper/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>
