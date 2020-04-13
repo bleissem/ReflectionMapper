@@ -30,13 +30,17 @@ namespace ReflectionMapper
                     object mapToConfigDto = Activator.CreateInstance(dtoEntityConfig);
 
                     Type invokeMapToConfigType = typeof(MapConfig<,>).MakeGenericType(dto, entity);
-                    IInvokeMapToConfig invokeMapping = (IInvokeMapToConfig)Activator.CreateInstance(invokeMapToConfigType, new object[] { mapToConfigDto, dto2Entity, entity2DTO });
+                    IInvokeMapToConfig invokeMapping = (IInvokeMapToConfig)Activator.CreateInstance(invokeMapToConfigType, new [] { mapToConfigDto, dto2Entity, entity2DTO });
                     invokeMapping.Invoke();
                 }
             }
         }
 
-        private IEnumerable<MapType> GetMapTypes(IEnumerable<Type> assemblyTypes)
+        protected ReflectionMapperProfile()
+        {
+        }
+
+        private static IEnumerable<MapType> GetMapTypes(IEnumerable<Type> assemblyTypes)
         {
             return assemblyTypes
                 .Where(s => s.GetInterfaces().Any(interfaces => interfaces.IsGenericType && interfaces.GetGenericTypeDefinition() == typeof(IMap<>)))
