@@ -8,6 +8,7 @@
     <Version>0.0.1</Version>
     <Company />
     <Description>ReflectionMapper maps via reflection</Description>
+    <PackageLicenseUrl>https://github.com/bleissem/ReflectionMapper/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
 </Project>
