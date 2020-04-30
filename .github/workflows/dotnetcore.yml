@@ -30,4 +30,10 @@ jobs:
     - name: NugetPack
       run: dotnet pack --configuration Release 
       working-directory: ${{env.working-directory}}
-
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        # Artifact name
+        name: Artifact
+        # A file, directory or wildcard pattern that describes what to upload
+        path: ${{env.working-directory}}/src/ReflectionMapper/bin/Release
