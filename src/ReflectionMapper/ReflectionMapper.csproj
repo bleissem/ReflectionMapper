@@ -5,10 +5,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Alexander Bleissem</Authors>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Company />
     <Description>ReflectionMapper maps via reflection</Description>
-    <PackageLicenseUrl>https://github.com/bleissem/ReflectionMapper/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
