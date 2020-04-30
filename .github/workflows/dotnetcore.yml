@@ -30,6 +30,4 @@ jobs:
     - name: NugetPack
       run: dotnet pack --configuration Release 
       working-directory: ${{env.working-directory}}
-    - name: NugetPush
-      run: dotnet nuget push "bin/Release/ReflectionMapper.0.0.1.nupkg" --source "github"
-      working-directory: ${{env.working-directory}}
+
