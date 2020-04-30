@@ -5,15 +5,28 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Alexander Bleissem</Authors>
-    <Version>0.0.3</Version>
-    <Company />
+    <Version>0.0.4</Version>
+    <Company>bleissem.com</Company>
     <Description>ReflectionMapper maps via reflection</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/bleissem/ReflectionMapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bleissem/ReflectionMapper</RepositoryUrl>
+    <PackageIcon>reflectionmapper.png</PackageIcon>
+    <AssemblyVersion>0.0.4.0</AssemblyVersion>
+    <FileVersion>0.0.4.0</FileVersion>
+    <Copyright>2020 bleissem.com</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\media\reflectionmapper.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
