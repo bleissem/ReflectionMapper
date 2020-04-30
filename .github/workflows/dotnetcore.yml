@@ -27,3 +27,8 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
       working-directory: ${{env.working-directory}}
+    - name: NugetPack
+      run: dotnet pack --configuration Release 
+      working-directory: ${{env.working-directory}}
+    - name: NugetPush
+      working-directory: dotnet nuget push "bin/Release/ReflectionMapper.0.0.1.nupkg" --source "github"
