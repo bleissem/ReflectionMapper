@@ -37,3 +37,16 @@ jobs:
         name: Artifact
         # A file, directory or wildcard pattern that describes what to upload
         path: ${{env.working-directory}}/ReflectionMapper/bin/Release
+    - name: Publish NuGet
+      uses: rohith/publish-nuget@v2.3.0
+      with:
+        # Filepath of the project to be packaged, relative to root of repository
+        PROJECT_FILE_PATH: ./ReflectionMapper/bin/Release
+        # NuGet package id to check against version changes, defaults to project name
+        PACKAGE_NAME: ReflectionMapper # optional
+        # Flag to enable / disable git tagging
+        TAG_COMMIT: true # optional, default is true
+        # Format of the git tag, `[*]` gets replaced with version
+        TAG_FORMAT: v* # optional, default is v*
+        # API key for the NuGet feed
+        NUGET_KEY:  ${{secrets.nuget_reflectionmapper}}  # optional
