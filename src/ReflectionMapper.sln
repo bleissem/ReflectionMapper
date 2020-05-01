@@ -7,7 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionMapper", "Reflect
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{DE678E65-217E-4D07-95F0-69A86F68A573}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\dotnetcore.yml = ..\.github\workflows\dotnetcore.yml
+		..\.github\workflows\cidevelop.yml = ..\.github\workflows\cidevelop.yml
+		..\.github\workflows\releasebuild.yml = ..\.github\workflows\releasebuild.yml
 	EndProjectSection
 EndProject
 Global
