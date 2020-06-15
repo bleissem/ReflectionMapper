@@ -9,7 +9,7 @@
     <Company>bleissem.com</Company>
     <Description>ReflectionMapper maps via reflection</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/bleissem/ReflectionMapper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bleissem/ReflectionMapper</RepositoryUrl>
     <PackageIcon>reflectionmapper.png</PackageIcon>
