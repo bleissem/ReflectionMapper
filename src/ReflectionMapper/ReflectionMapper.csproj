@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Alexander Bleissem</Authors>
-    <Version>0.0.4</Version>
+    <Version>1.0.0</Version>
     <Company>bleissem.com</Company>
     <Description>ReflectionMapper maps via reflection</Description>
     <PackageLicenseUrl></PackageLicenseUrl>
