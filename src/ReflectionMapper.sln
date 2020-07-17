@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		..\.github\workflows\releasebuild.yml = ..\.github\workflows\releasebuild.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionMapper.Tests", "ReflectionMapper.Tests\ReflectionMapper.Tests.csproj", "{1E4756FF-ED4F-4C93-95B8-6C2D7A2E3242}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{327D6E15-2D49-4D5F-B619-946ED538F71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{327D6E15-2D49-4D5F-B619-946ED538F71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{327D6E15-2D49-4D5F-B619-946ED538F71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4756FF-ED4F-4C93-95B8-6C2D7A2E3242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4756FF-ED4F-4C93-95B8-6C2D7A2E3242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4756FF-ED4F-4C93-95B8-6C2D7A2E3242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4756FF-ED4F-4C93-95B8-6C2D7A2E3242}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,11 +3,17 @@ using System;
 
 namespace ReflectionMapper
 {
-    public abstract class MapConfig<TDTO, TEntity>
-        where TDTO : class where TEntity : class
+    public abstract class MapConfig<MapTo, MapFrom>
+        where MapTo : class where MapFrom : class
     {
-        public virtual Action<IMappingExpression<TEntity, TDTO>> AlterReadMapping { get { return null; } }
+        public virtual Action<IMappingExpression<MapFrom, MapTo>> AlterReadMapping()
+        {
+            return null;
+        }
 
-        public virtual Action<IMappingExpression<TDTO, TEntity>> AlterSaveMapping { get { return null; } }
+        public virtual Action<IMappingExpression<MapTo, MapFrom>> AlterSaveMapping()
+        {
+            return null;
+        }
     }
 }
