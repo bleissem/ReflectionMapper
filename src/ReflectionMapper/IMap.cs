@@ -1,6 +1,6 @@
 ﻿namespace ReflectionMapper
 {
-    public interface IMap<Entity> where Entity : class
+    public interface IMap<MapFrom> where MapFrom : class
     {
     }
 }

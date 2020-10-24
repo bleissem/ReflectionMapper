@@ -30,5 +30,4 @@ jobs:
     - name: NugetPack
       run: dotnet pack --configuration Release 
       working-directory: ${{env.working-directory}}
-    - name: docfx-action
-      uses: nikeee/docfx-action@v0.1.0
+
