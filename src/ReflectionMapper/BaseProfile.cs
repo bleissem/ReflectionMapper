@@ -8,12 +8,12 @@ using System.Reflection;
 namespace ReflectionMapper
 {
     /// <summary>
-    /// Looks for classes that implement <see cref="IMap{Entity}"/> Interface.
+    /// Looks for classes that implement <see cref="IMap{Entity}"/> Interface within the given assemblies
     /// </summary>
     /// <param name="assemblies">Assemblies that are used to look for classes that implement <see cref="IMap{Entity}"/> interface.</param>
-    public abstract class ReflectionMapperProfile : Profile
+    public abstract class BaseProfile : Profile
     {
-        protected ReflectionMapperProfile(params Assembly[] assemblies)
+        protected BaseProfile(params Assembly[] assemblies)
         {
             IEnumerable<Type> assembyTypes = assemblies.SelectMany(assembly => assembly.GetTypes());
 
