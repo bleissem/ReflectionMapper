@@ -5,7 +5,12 @@ using System.Text;
 
 namespace ReflectionMapper
 {
-    public abstract class Map<MapTo, MapFrom> : IMap<MapFrom>
+    /// <summary>
+    /// Maps with configuration when Reading or Saving
+    /// </summary>
+    /// <typeparam name="MapTo"></typeparam>
+    /// <typeparam name="MapFrom"></typeparam>
+    public abstract class MapConfig<MapTo, MapFrom> : IMap<MapFrom>
         where MapTo : class
         where MapFrom : class
     {

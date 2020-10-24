@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ReflectionMapper.Tests
 {
-    internal class MappingWithConfig : Map<MapTo2, MapFrom2>
+    internal class MappingWithConfig : MapConfig<MapTo2, MapFrom2>
     {
         public override Action<IMappingExpression<MapFrom2, MapTo2>> AlterReadMapping()
         {
