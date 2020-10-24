@@ -13,7 +13,7 @@ namespace ReflectionMapper.Tests
                 config.AddProfile<TestProfile>();
             }));
 
-            MapFrom mapFrom = new MapFrom()
+            MapFrom mapFrom = new MapFrom
             {
                 Id = 3
             };
@@ -30,7 +30,7 @@ namespace ReflectionMapper.Tests
                 config.AddProfile<TestProfile>();
             }));
 
-            MapFrom2 mapFrom = new MapFrom2()
+            MapFrom2 mapFrom = new MapFrom2
             {
                 Prop = "Z"
             };
@@ -48,7 +48,7 @@ namespace ReflectionMapper.Tests
                 config.AddProfile<TestProfile>();
             }));
 
-            MapTo2 mapTo = new MapTo2()
+            MapTo2 mapTo = new MapTo2
             {
                 Prop = "Y",
                 AnotherProp = "X"
