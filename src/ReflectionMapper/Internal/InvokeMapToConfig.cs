@@ -19,8 +19,8 @@ namespace ReflectionMapper.Internal
 
         public void Invoke()
         {
-            _mapToConfig?.AlterReadMapping?.Invoke(_entity2DTO);
-            _mapToConfig?.AlterSaveMapping?.Invoke(_dto2Entity);
+            _mapToConfig?.AlterReadMapping()?.Invoke(_entity2DTO);
+            _mapToConfig?.AlterSaveMapping()?.Invoke(_dto2Entity);
         }
     }
 }
