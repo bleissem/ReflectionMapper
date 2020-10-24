@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ReflectionMapper.Tests
 {
-    public class TestProfile : DefaultReflectionMapperProfile
+    public class TestProfile : SameAssemblyProfile
     {
     }
 }

@@ -5,9 +5,12 @@ using System.Text;
 
 namespace ReflectionMapper
 {
-    public abstract class DefaultReflectionMapperProfile : BaseProfile
+    /// <summary>
+    /// looks for classes that implement <seealso cref="IMap{MapFrom}" within the same assembly/>
+    /// </summary>
+    public abstract class SameAssemblyProfile : BaseProfile
     {
-        protected DefaultReflectionMapperProfile() : base(Assembly.GetCallingAssembly())
+        protected SameAssemblyProfile() : base(Assembly.GetCallingAssembly())
         {
         }
     }

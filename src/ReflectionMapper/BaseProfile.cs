@@ -8,7 +8,7 @@ using System.Reflection;
 namespace ReflectionMapper
 {
     /// <summary>
-    /// Looks for classes that implement <see cref="IMap{Entity}"/> Interface within the given assemblies
+    /// Looks for classes that implement <see cref="IMap{Entity}"/> Interface or <seealso cref="MapConfig"/> within the given assemblies
     /// </summary>
     /// <param name="assemblies">Assemblies that are used to look for classes that implement <see cref="IMap{Entity}"/> interface.</param>
     public abstract class BaseProfile : Profile
