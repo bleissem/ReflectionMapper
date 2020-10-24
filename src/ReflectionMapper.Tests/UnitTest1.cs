@@ -23,7 +23,7 @@ namespace ReflectionMapper.Tests
         }
 
         [Fact]
-        public void MapMappingWithConfig()
+        public void MapMappingWithConfigReading()
         {
             AutoMapper.Mapper mapper = new AutoMapper.Mapper(new AutoMapper.MapperConfiguration(config =>
             {
@@ -38,6 +38,24 @@ namespace ReflectionMapper.Tests
             var mapto = mapper.Map<MapTo2>(mapFrom);
             Assert.Equal("AZ", mapto.Prop);
             Assert.Equal("42", mapto.AnotherProp);
+        }
+
+        [Fact]
+        public void MapMappingWithConfigSaving()
+        {
+            AutoMapper.Mapper mapper = new AutoMapper.Mapper(new AutoMapper.MapperConfiguration(config =>
+            {
+                config.AddProfile<TestProfile>();
+            }));
+
+            MapTo2 mapTo = new MapTo2()
+            {
+                Prop = "Y",
+                AnotherProp = "X"
+            };
+
+            var mapBack = mapper.Map<MapFrom2>(mapTo);
+            Assert.Equal("X", mapBack.Prop);
         }
     }
 }
